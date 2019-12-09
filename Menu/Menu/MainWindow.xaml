@@ -1,0 +1,70 @@
+﻿<Window x:Class="Menu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Menu"
+        mc:Ignorable="d"
+        Title="Paliwo" Height="350" Width="556.374">
+    <Grid>
+        <Menu x:Name="Menu" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="548" Background="#FFFF4835">
+            <Button x:Name="addRekord" Content="Dodaj wpis" Background="#FFFF4835" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold" ClickMode="Press" Height="20" Click="addRekord_Click" />
+            <Button x:Name="editRekord" Content="Edytuj wpis" Background="#FFFF4835" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold" ClickMode="Press" Height="20" Click="editRekord_Click" />
+            <Button x:Name="deleteRekord" Content="Usuń wpis" Background="#FFFF4835" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" ClickMode="Press" Height="20" Click="deleteRekord_Click" />
+            <Button x:Name="SearchRekord" Content="Sprawdź wpisy" Background="#FFFF4835" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold" Padding="3,1" ClickMode="Press" Height="20" Click="SearchRekord_Click"/>
+        </Menu>
+        <Separator HorizontalAlignment="Left" Height="18" Margin="335,3,0,0" VerticalAlignment="Top" Width="19" RenderTransformOrigin="0.5,0.5" Background="White">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Separator HorizontalAlignment="Left" Height="18" Margin="72,3,0,0" VerticalAlignment="Top" Width="19" RenderTransformOrigin="0.5,0.5" Background="White">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Separator HorizontalAlignment="Left" Height="18" Margin="230,3,0,0" VerticalAlignment="Top" Width="19" RenderTransformOrigin="0.5,0.5" Background="White">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Separator HorizontalAlignment="Left" Height="18" Margin="153,3,0,0" VerticalAlignment="Top" Width="19" RenderTransformOrigin="0.5,0.5" Background="White">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Frame x:Name="Main" HorizontalAlignment="Center" Height="290" Margin="0,29,0,0" VerticalAlignment="Center" Width="548" ScrollViewer.VerticalScrollBarVisibility="Auto" NavigationUIVisibility="Hidden"/>
+        <TextBlock x:Name="timeLbl" HorizontalAlignment="Left" Margin="492,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="46" TextAlignment="Right" LineHeight="18" Foreground="#FFA83333" FontWeight="Bold" Text="" FontSize="11" FontStyle="Italic"/>
+        <TextBlock x:Name="dateLbl" HorizontalAlignment="Left" Margin="382,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="98" TextAlignment="Right" LineHeight="18" Foreground="#FFA83333" FontWeight="Bold" Text="" FontStyle="Italic"/>
+        <Separator HorizontalAlignment="Left" Height="18" Margin="481,-1,0,0" VerticalAlignment="Top" Width="14" RenderTransformOrigin="0.5,0.5" Background="#FFA83333" Foreground="#FFA83333">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+    </Grid>
+</Window>
